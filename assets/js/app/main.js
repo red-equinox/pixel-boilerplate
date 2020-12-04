@@ -1,14 +1,16 @@
-////define(function (require) {
-  // Load any app-specific modules
-  // with a relative require call,
-  // like:
-  ////var messages = require('./messages');
-
-  // Load library/vendor modules using
-  // full IDs, like:
-  ////var print = require('print');
-
-  //print(messages.getHello());
-
+console.log( "app/main.js"  );
+//define(function (require) {
+  //console.log( "Put your javascript foo here"  );
 //});
-console.log( "app/main.js" );
+requirejs(['domReady', 'underscore'], function (domReady) {
+    requirejs(['one', 'two'], function (one, two) {
+        domReady(function () {
+            one.addToDom();
+            console.log( "Put your one foo here"  );
+            two.addToDom();
+            console.log( "Put your one foo here"  );
+        });
+    });
+
+
+});
