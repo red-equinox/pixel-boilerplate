@@ -1,4 +1,4 @@
-define(function (require) {
+////define(function (require) {
   // Load any app-specific modules
   // with a relative require call,
   // like:
@@ -9,7 +9,6 @@ define(function (require) {
   ////var print = require('print');
 
   //print(messages.getHello());
-  console.log('red');
 
-  print('Hi Red');
-});
+//});
+console.log( "app/main.js" );
