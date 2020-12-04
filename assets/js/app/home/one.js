@@ -1,4 +1,4 @@
-console.log( "app/two.js"  );
+console.log( "app/one.js"  );
 define({
   addToDom: function () {
       var div = document.createElement('div');

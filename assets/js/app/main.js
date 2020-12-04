@@ -3,17 +3,14 @@ console.log( "app/main.js"  );
   //console.log( "Put your javascript foo here"  );
 //});
 requirejs(['domReady', 'underscore'], function (domReady) {
-    requirejs(['one'], function (one) {
+    requirejs(['one', 'two'], function (one, two) {
         domReady(function () {
             one.addToDom();
-
-        });
-    });
-
-    requirejs(['two'], function (two) {
-        domReady(function () {
+            console.log( "Put your one foo here"  );
             two.addToDom();
-
+            console.log( "Put your one foo here"  );
         });
     });
+
+
 });
