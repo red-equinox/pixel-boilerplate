@@ -2,7 +2,17 @@ console.log( "app.js - requireJS config - starts app/main using requirejs([app/m
 requirejs.config({
   baseUrl: 'assets/js/lib',
   paths: {
-    app: '../app'
+    app: '../app',
+    underscore: 'underscore',
+    domReady: 'domReady',
+    one: '../app/home/one',
+    two: '../app/home/two',
+  },
+  shim: {
+    underscore: {
+      exports: '_'
+    },
+
   }
 });
 
