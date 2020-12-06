@@ -8,7 +8,7 @@ requirejs(['domReady', 'underscore'], function (domReady) {
             one.addToDom();
             console.log( "Put your one foo here"  );
             two.addToDom();
-            console.log( "Put your one foo here"  );
+            console.log( "Put your two foo here"  );
         });
     });
 
